@@ -18,3 +18,53 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+/* Task */
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+}
+
+.country-list {
+  padding: 0;
+  list-style: none;
+}
+
+.country-item,
+.manifest-country {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.country-item:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.item-text {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.manifest-country {
+  margin-bottom: 20px;
+}
+
+.country-name {
+  font-size: 20px;
+}
+
+.accent {
+  font-weight: 600;
+}
+
+.card-text:not(:last-child) {
+  margin-bottom: 10px;
+}
