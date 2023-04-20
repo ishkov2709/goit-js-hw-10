@@ -17,10 +17,10 @@ const DEBOUNCE_DELAY = 300;
 
 const onInputGetCountryHandler = evt => {
   const country = evt.target.value.trim();
+  cleanForm();
   if (!country) {
     return;
   }
-  cleanForm();
   return getCountry(country).then(detectCountries).catch(errorQuery);
 };
 
